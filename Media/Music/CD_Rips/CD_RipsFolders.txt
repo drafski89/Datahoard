@@ -1,0 +1,7 @@
+This document describes the folders inside CD_Rips folder.
+
+AllRips
+This is where non-classical CD rips go.
+
+Classical
+This is where classical CD rips go.
