@@ -24,6 +24,9 @@ This folder holds entire photo library. To view a library in Adobe Lightroom, si
 Podcasts
 This folder will hold Podcasts. Currently empty.
 
+Radio_Shows
+This folder holds radio show downloads. These are different from Podcasts.
+
 TV_Shows 
 This folder holds all raw rips from disk along with encoded and named versions of TV Shows. It is in a Plex-friendly format.
 

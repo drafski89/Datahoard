@@ -1,0 +1,16 @@
+This document describes the purpose of each folder inside the Music folder.
+
+_To_Sort
+Self-explanatory folder; unsorted music goes here.
+
+Car_Format_Music_256KBPS
+This folder holds music which has been downsampled from .flac format to .mp3 at 256 kbps for use in car.
+
+CD_Rips
+This folder holds rips from CDs in lossless .flac format.
+
+Home_Recordings
+This folder holds recordings which have been made on phone or another recording device by non-professional.
+
+Soundcloud_Downloads
+This folder holds items downloaded from Soundcloud.
