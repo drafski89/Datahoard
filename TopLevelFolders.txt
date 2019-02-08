@@ -1,0 +1,20 @@
+_DumpingGround
+This folder handles random drops into the server. If something needs to be backed up and short on time, just dump and worry about it later.
+
+Archived_Data
+This data will rarely be accessed. It is for storing data from data CDs, old media players, old backup documents, and anything else that shouldn't be accessed.
+
+Books
+Holds audiobooks, Kindle books, PDF books, and anything else related to books. 
+
+Documents
+Holds all documents, from resumes to lease documents to car service history.
+
+Games
+Holds games that are not on Steam. Maybe(?) you could download Steam games to NAS and play over a connection if server and client, and the network connection is fast enough.
+
+Media
+Holds iTunes Library, Podcasts, Movies, Music, TV Shows, YouTube Downloads, and all Photos
+
+Software
+Holds disk images, documentation, backups for portable software, and anything else related to software or installers
