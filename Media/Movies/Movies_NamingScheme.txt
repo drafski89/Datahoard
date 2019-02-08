@@ -1,0 +1,12 @@
+\Movies
+  \MovieName1 (Year)
+    MovieName1 (Year) - SOURCETYPE {EXTENSION}.extension
+    MovieName1 (Year) - SOURCETYPE Subtitles.en.srt
+    MovieName1 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+  \MovieName2 (Year)
+    MovieName2 (Year) - SOURCETYPE {EXTENSION}.extension
+    MovieName2 (Year) - SOURCETYPE Subtitles.fr.srt
+  \MovieName3 (Year)
+    MovieName3 (Year) - SOURCETYPE {EXTENSION}.extension
+    MovieName3 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+  
