@@ -1,0 +1,31 @@
+This document describes the purpose of each folder in the Media folder sublevel.
+
+__DownloadUtilities
+This folder will be moved soon. It currently holds download scripts, bat files, url lists, and other things related to automatically downloading items. It will be distributed into this Git repo with each type of auto downloader in the appropriate subfolder.
+
+_Folders
+These are blank folders when ripping TV shows from Blu-Ray to server. It makes it easier to Ctrl-C and Ctrl-V a set of folders over and over again instead of recreating them.
+
+InternetArchive
+This is used for downloading media from Archive.org (amazing source!). It will house anything in the works, then will be offloaded to cold storage HDs.
+
+iTunes_Library
+This is the main directory for iTunes currently used. It is where iTunes will download and save media. Currently iTunes is being used only for Podcasts. Plan to get away from this and use wget with a URL list to get all Podcasts.
+
+Movies
+This folder holds all raw rips from disk along with encoded versions of movies. It is in a Plex-friendly format.
+
+Music
+This folder holds CDs rips, classical rips, car music, downsampled car music, any home recordings, radio shows, and SoundCloud downloads. All rips are .flac. See subfolders for naming schemes.
+
+Photos_and_Home_Movies
+This folder holds entire photo library. To view a library in Adobe Lightroom, simply point the root folder to this folder and all items should be detected.
+
+Podcasts
+This folder will hold Podcasts. Currently empty.
+
+TV_Shows 
+This folder holds all raw rips from disk along with encoded and named versions of TV Shows. It is in a Plex-friendly format.
+
+YouTube
+This folder holds all items downloaded from YouTube including channel videos, documentaries, and freely available class playlists. It implements Youtube-dl for automation.
