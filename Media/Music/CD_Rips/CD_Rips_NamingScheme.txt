@@ -2,7 +2,6 @@ This document describes the naming scheme of subfolders in the CD_Rips folder.
 
 Both naming schemes are the same, and are implemented using dBpoweramp CD Ripper ripping software for compressed lossless .flac rips.
 
-
 If the media type is non-classical:
 Set the path to ".\AllRips"
 
@@ -23,3 +22,24 @@ Set the naming scheme to:
 
 For one line, copy the line below:
 [IFCOMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][][IF!COMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][]
+
+The human-readable version:
+\Music
+  \ArtistName1
+    \Year - AlbumName1
+      TrackNumber - TrackName {EXTENSION}.extension
+      Folder.jpg
+    \Year - AlbumName2
+      DiscNumber - TrackNumber TrackName {EXTENSION}.extension
+      Folder.jpg
+  \ArtistName2
+    \Year - AlbumName1
+      TrackNumber - TrackName {EXTENSION}.extension
+      Folder.jpg
+  \Various Artists
+    \Year - CompilationAlbumName1
+      TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+      Folder.jpg
+    \Year - CompilationAlbumName2
+      DiscNumber - TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+      Folder.jpg
