@@ -1,0 +1,14 @@
+\TV Shows
+  \ShowName1
+    \Season 01 (YearAired)
+      ShowName1 - S01E01 - EpisodeName – SOURCETYPE {EXTENSION}.extension
+      ShowName1 - S01E02 - EpisodeName – SOURCETYPE {EXTENSION}.extension
+    \Season 02 (YearAired)
+      ShowName1 - S02E01 - EpisodeName – SOURCETYPE {EXTENSION}.extension
+  \ShowName2
+    \Season 00
+      ShowName2 - S00E01 - BonusFeaturesName (YearAired) {EXTENSION}.extension
+      ShowName2 - S00E01 - BonusFeaturesName (YearAired) {EXTENSION}.extension
+    \Season 01 (YearAired)
+      ShowName2 - S01E01 - EpisodeName {EXTENSION}.extension
+  
