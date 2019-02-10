@@ -3,4 +3,9 @@ Args for YouTubeDL Commands
 Basic Structure:
 youtube-dl -f bestvideo+bestaudio -ciw -o "<PATH_TO_OUTPUT_LOCATION>\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv CHANNEL_URL
 
+Already downloaded file:
+.\channel_downloads.txt
+.\documentary_downloads.txt
+.\course_downloads.txt
+
 Args to implement:
