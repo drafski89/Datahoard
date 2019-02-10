@@ -1,8 +1,10 @@
 Standard Command:
-java -jar .\ripme.jar -d -l "Q:\Data_Andrew\Media\Photos_and_Home_Movies\Background_Images\RedditRips\" -t 4 -w -u URL_HERE
+java -jar .\ripme.jar -d -l "PATH_TO_DOWNLOAD_TO" -t 4 -w -u URL_HERE
 
 Download a URL File List
 java -jar "PATH_TO_RIPME.JAR" -d -l "PATH_TO_DOWNLOAD_TO" -t 4 -w -f "PATH_TO_URL_FILE_LIST"
+
+NOTE: A file will be generated for all the downloads completed.
 
 -----------------------------
 
