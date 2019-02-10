@@ -1,0 +1,8 @@
+Channels:
+These need to be updated with a .bat script
+
+Courses:
+These are organized into \<INSTITUTION>\<U/G>_<COURSECODE>_<COURSENAME>\COURSE_ITEMS
+
+Documentaries:
+These are single-run downloads
