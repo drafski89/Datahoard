@@ -1,0 +1,55 @@
+6.851 - Advanced Data Structures
+Graduate Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\G_6.851_AdvancedDataStructures\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf
+
+6.858 - Computer System Security
+Graduate Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\G_6.858_ComputerSystemSecurity\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP62K2DjQLRxDNRi0z2IRWnNh
+
+6.046J - Design and Analysis of Algorithms
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.046J_DesignAndAnalysisOfAlgorithms\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp
+
+6.890 - Algorithm Lower Bounds and Hardness Proofs
+Graduate Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\G_6.890_AlgorithmLowerBoundsHardnessProofs\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP63d33STUUBfZUpzFCVR5-PV
+
+6.034 - AI
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.034_AI\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP63gFHB6xb-kVBiQHYe_4hSi
+
+6.042J - Math for CS
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.042J_MathForCS\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP60UlabZBeeqOuoLuj_KNphQ
+
+6.172 - Engineering Of Software Systems
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.172_EngineeringOfSoftwareSystems\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLD2AE32F507F10481
+
+6.0001 - Intro to CS and Python
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.0001_IntroToCSAndPython\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA
+
+6.0002 - Intro to Computational Thinking and Data Science
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_6.0002_IntroToComputationalThinking\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PLUl4u3cNGP619EG1wp0kT-7rDE_Az5TNd
+
+CS255 - Intro to Crypto
+Graduate Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\Stanford\G_CS255_IntroToCryptography\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PL2jrku-ebl3H50FiEPr4erSJiJHURM9BX
+
+18.01SC - Calculus Single Variable
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_18.01SC_CalcSingleVariable\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1
+
+18.02SC - Calculus Multi Variable
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_18.02SC_CalcMultiVariable\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PL4C4C8A7D06566F38
+
+18.03SC - Differential Equations
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_18.03SC_DifferentialEquations\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PL64BDFBDA2AF24F7E
+
+18.06SC - Linear Algebra
+Undergrad Level
+youtube-dl -f bestvideo+bestaudio -ciw -o "%ROOT_PATH%\MITOpenCourseWare\U_18.06SC_LinearAlgebra\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C
