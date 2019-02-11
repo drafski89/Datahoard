@@ -3,9 +3,24 @@ Args for YouTubeDL Commands
 Basic Structure:
 youtube-dl -f bestvideo+bestaudio -ciw -o "<PATH_TO_OUTPUT_LOCATION>\%(upload_date)s_%(title)s.%(ext)s" -v --merge-output-format mkv CHANNEL_URL
 
-Already downloaded file:
+Archive downloaded file:
 .\channel_downloads.txt
 .\documentary_downloads.txt
 .\course_downloads.txt
 
 Args to implement:
+Output format:  -f bestvideo+bestaudio
+Continue Downloads:  -c
+Ignore Errors and Keep Downloading:  -i
+Don't Overwrite Files:  -w
+Embed Thumbnail as Cover Art:  --embed-thumbnail
+Download All Thumbnails:  --write-all-thumbnails
+Embed Subs in Video:  --embed-subs 
+Download All Subs:  --all-subs
+Add Metadata to Video File:  --add-metadata
+Make the output MKV:  --merge-output-format mkv
+Read URLs from File:  --batch-file <FILE_OF_URLS>
+Don't redownload files if they've been downloaded: --download-archive <ARCHIVE_FILE>
+Output Location:  -o "<PATH_TO_OUTPUT_LOCATION>\%(upload_date)s_%(title)s.%(ext)s"
+
+And put the item to download at the end of the URL
