@@ -16,9 +16,9 @@ set NPA=-ciw -v --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs
 ::REM set up parameter args
 set FMT=-f bestvideo+bestaudio
 set OUTFMT=--merge-output-format mkv
-set OUT=-o "%FP%\<LOC>\%(channel)s\%(upload_date)s_%(title)s.%(ext)s"
-set INFILE=--batch-file <FILE_OF_URLS>
-set ARCHFILE=--download-archive <ARCHIVE_FILE>
+set OUT=-o "%FP%\Channels\%(channel)s\%(upload_date)s_%(title)s.%(ext)s"
+set INFILE=--batch-file ".\ChannelURLs.txt"
+set ARCHFILE=--download-archive ".\ChannelCompletedDLs.txt"
 
 ::REM Full Command
 youtube-dl %NPA% %FMT% %OUTFMT% %OUT% %ARCHFILE% %INFILE%
