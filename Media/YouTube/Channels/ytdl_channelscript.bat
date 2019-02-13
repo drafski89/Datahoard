@@ -1,12 +1,15 @@
 ::REM set up non-parameter args
 set NPA=-ciw -v --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs --add-metadata 
 
+::REM set root path
+set root_path="T:\YouTube\
+
 ::REM set up parameter args
 set FMT=-f bestvideo+bestaudio 
 set OUTFMT=--merge-output-format mkv 
-set OUT=-o ".\Channels\%%(uploader)s\%%(upload_date)s_%%(title)s.%%(ext)s" 
-set INFILE=--batch-file ".\ChannelURLs.txt" 
-set ARCHFILE=--download-archive ".\ChannelVidsCompltedDL.txt" 
+set OUT=-o "%root_path%\Channels\%%(uploader)s\%%(upload_date)s_%%(title)s.%%(ext)s" 
+set INFILE=--batch-file "%root_path%\OtherFiles\ChannelURLs.txt" 
+set ARCHFILE=--download-archive "%root_path%\OtherFiles\ChannelVidsCompltedDL.txt" 
 
 ::REM Full Command
 youtube-dl %NPA% %FMT% %OUTFMT% %OUT% %INFILE% %ARCHFILE%
