@@ -2,7 +2,7 @@
 set NPA=-ciw -v --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs --add-metadata 
 
 ::REM set root path
-set ROOT_PATH="T:\YouTube
+set ROOT_PATH="T:\YouTube"
 
 ::REM set up parameter args
 set FMT=-f bestvideo+bestaudio 
