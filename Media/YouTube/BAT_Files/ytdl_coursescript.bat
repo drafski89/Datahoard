@@ -1,3 +1,5 @@
+title Course Downloader
+
 ::REM set up non-parameter args
 set NPA=-ciw  --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs --add-metadata 
 

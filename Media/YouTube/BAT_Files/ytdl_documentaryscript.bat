@@ -1,3 +1,5 @@
+title Documentary Downloader
+
 ::REM set up non-parameter args
 set NPA=-ciw -v --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs --add-metadata 
 
