@@ -11,7 +11,7 @@ set ARCHFILE=--download-archive "%ROOT_PATH%\OtherFiles\CourseVidsCompletedDL.tx
 
 ::6.851 - Advanced Data Structures
 ::Graduate Level
-youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\MITOpenCourseWare\G_6.851_AdvancedDataStructures\%%%(title)s.%%%(ext)s" https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf %ARCHFILE%
+youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\MITOpenCourseWare\G_6.851_AdvancedDataStructures\%%(title)s.%%(ext)s" https://www.youtube.com/playlist?list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf %ARCHFILE%
 
 ::6.858 - Computer System Security
 ::Graduate Level
