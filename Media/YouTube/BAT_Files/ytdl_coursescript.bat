@@ -66,3 +66,9 @@ youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\MITOpenCourseWare\U_18.03SC_Diff
 ::18.06SC - Linear Algebra
 ::Undergrad Level
 youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\MITOpenCourseWare\U_18.06SC_LinearAlgebra\%%(title)s_%%(id)s.%%(ext)s" https://www.youtube.com/playlist?list=PL221E2BBF13BECF6C %ARCHFILE%
+
+::Intro to Options Trading
+youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\Tastytrade\OptionsTrading\%%(title)s_%%(id)s.%%(ext)s" https://www.youtube.com/playlist?list=PLPVve34yolHYp18r6vDmL8bK2R-OyXzCu %ARCHFILE%
+
+::Intro to Futures Trading
+youtube-dl %NPA% %FMT% %OUTFMT% -o "%ROOT_PATH%\Tastytrade\FuturesTrading\%%(title)s_%%(id)s.%%(ext)s" https://www.youtube.com/playlist?list=PLPVve34yolHbrZUmnFmZEzuqzy2fpo38d %ARCHFILE%
