@@ -9,7 +9,7 @@ set ROOT_PATH=T:\YouTube\Courses
 ::REM set up parameter args
 set FMT=-f bestvideo+bestaudio 
 set OUTFMT=--merge-output-format mkv
-set ARCHFILE=--download-archive "T:\YouTube\OtherFiles\CourseVidsCompletedDL"
+set ARCHFILE=--download-archive "T:\YouTube\OtherFiles\CourseVidsCompletedDL.txt"
 
 ::6.851 - Advanced Data Structures
 ::Graduate Level
