@@ -4,12 +4,12 @@ title Course Downloader
 set NPA=-ciw  --embed-thumbnail --write-all-thumbnails --embed-subs --all-subs --add-metadata 
 
 ::REM set root path
-set ROOT_PATH=T:\YouTube\Courses
+set ROOT_PATH=Q:\Andrew\Media\YouTube\Courses
 
 ::REM set up parameter args
 set FMT=-f bestvideo+bestaudio 
 set OUTFMT=--merge-output-format mkv
-set ARCHFILE=--download-archive "T:\YouTube\OtherFiles\CourseVidsCompletedDL.txt"
+set ARCHFILE=--download-archive "Q:\Andrew\Media\YouTube\Other_Files\CourseVidsCompletedDL.txt"
 
 ::6.851 - Advanced Data Structures
 ::Graduate Level

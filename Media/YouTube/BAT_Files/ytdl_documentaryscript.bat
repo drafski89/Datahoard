@@ -10,8 +10,8 @@ set ROOT_PATH="T:\YouTube"
 set FMT=-f bestvideo+bestaudio 
 set OUTFMT=--merge-output-format mkv 
 set OUT=-o "%ROOT_PATH%\Documentaries\%%(title)s_%%(id)s.%%(ext)s" 
-set INFILE=--batch-file "%ROOT_PATH%\OtherFiles\DocumentariesURLs.txt" 
-set ARCHFILE=--download-archive "%ROOT_PATH%\OtherFiles\DocumentaryVidsCompletedDL.txt" 
+set INFILE=--batch-file "%ROOT_PATH%\Other_Files\DocumentariesURLs.txt" 
+set ARCHFILE=--download-archive "%ROOT_PATH%\Other_Files\DocumentaryVidsCompletedDL.txt" 
 
 ::REM Full Command
 youtube-dl %NPA% %FMT% %OUTFMT% %OUT% %INFILE% %ARCHFILE%
