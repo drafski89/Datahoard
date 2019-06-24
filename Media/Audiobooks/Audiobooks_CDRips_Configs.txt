@@ -1,0 +1,9 @@
+[album] by [artist] - [album artist]\Disc [SETLEN]2,48,,[disc][] - [title] {[UPPER][extension][]}
+
+Title: 01 - xx
+Artist: The Writer or Writers
+Album Artist: The Performer
+Album: The Title of the Book
+Disc: 01 - x
+Genre: Audiobook
+Year: Year on Case
