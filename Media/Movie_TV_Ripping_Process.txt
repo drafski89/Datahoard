@@ -1,0 +1,10 @@
+Bluray Ripping Process:
+
+The disc is purchased and opened
+A folder is created in \Processing_Rips\Movie Name (Year Released)
+The disc is ripped into created folder using MakeMKV
+Once a full rip of the movie/TV show has happened, the folder is copied into \Raw_Rips
+	Note: Each TV show should remain in "Processing_Rips" until a full season has been ripped
+The movie/TV show file is processed using Handbrake and "Plex Normal" settings with the final directory target set to \Media
+
+The raw rip should be stored in \Raw_Rips for safe keeping

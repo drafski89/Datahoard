@@ -1,0 +1,251 @@
+Naming Scheme for Ripped Media
+----------------------------------------------------------------------------------------------
+Notes:
+	The file and naming structures are current as of 2016-06-03
+	
+----------------------------------------------------------------------------------------------
+Media Library Folder Structure Overview
+	All media files will be placed into a folder labeled "Ripped Media"
+	All playback programs should be pointed to the corresponding directories inside the "Ripped Media" folder
+	Structure:
+		\Ripped Media
+			\Movies
+				** See "Movies" Section for Structure and Naming Scheme **
+			\Music
+				** See "Music" Section for Structure and Naming Scheme **
+			\TV Shows
+				** See "TV Shows" Section for Structure and Naming Scheme **
+
+----------------------------------------------------------------------------------------------
+Movies
+	Each movie will have a folder with the naming scheme:
+		Year will be 4 Digits Long
+		Example:
+		\MovieName1 (Year)
+		\MovieName2 (Year)
+	Movies will take the following naming scheme:
+		SOURCETYPE will be DVD, BLURAY, BLURAY50, DOWNLOAD, or UNKNOWN
+		Example:
+		MovieName1 (Year) - SOURCETYPE {EXTENSION}.extension
+	Subtitles will take the following naming scheme:
+		Example:
+		MovieName1 (Year) - SOURCETYPE Subtitles.en.srt
+		MovieName2 (Year) - SOURCETYPE Subtitles.fr.srt
+		MovieName3 (Year) - SOURCETYPE Subtitles.sp.srt
+		Complete listing of language extensions here:
+			en: English
+			fr: French
+			sp: Spanish
+	Extra features will take the following naming scheme:
+		Example:
+		MovieName1 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+		MovieName2 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+	Folder Structure:
+		\Movies
+			\MovieName1 (Year)
+				MovieName1 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName1 (Year) - SOURCETYPE Subtitles.en.srt
+				MovieName1 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+			\MovieName2 (Year)
+				MovieName2 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName2 (Year) - SOURCETYPE Subtitles.fr.srt
+			\MovieName3 (Year)
+				MovieName3 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName3 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+
+----------------------------------------------------------------------------------------------
+Music
+	All music files will be stored in the \Music directory
+	Album art will be labeled as "Folder.jpg"
+		This will always be the front cover art of the album
+	Compilations:
+		Multiple CD Album, Various Artists: 
+			Various Artists\Year - AlbumName\DiscNumber - TrackNumber - ArtistName - TrackName {EXTENSION}.extension
+			Example: Various Artists\2014 - Now That's What I Call Summer\Disc 002 - 07 - LMFAO - Sexy And I Know It {FLAC}.flac
+			Various Artists
+				2014 - Now That's What I Call Summer
+					Disc 002 - 07 - LMFAO - Sexy and I Know It {FLAC}.flac
+		Single CD Album, Various Artists: 
+			Various Artists\Year - AlbumName\TrackNumber - ArtistName - TrackName {EXTENSION}.extension
+			Example: Various Artists\2015 - Now That's What I Call Music 56\11 - Rachel Platton - Fight Song {FLAC}.flac
+			Various Artists
+				2015 - Now That's What I Call Music 56
+					11 - Rachel Platton - Fight Song {FLAC}.flac
+	Non-Compilations:
+		Multiple CD Album, Single Artist: 
+			ArtistName\Year - AlbumName\DiscNumber - TrackNumber - TrackName {EXTENSION}.extension
+			Example: Bon Jovi\2010 - Bon Jovi Greatest Hits Ultimate Collection\Disc 002 - 11 - This Is Love This Is Life {FLAC}.flac
+			Bon Jovi
+				2010 - Bon Jovi Greatest Hits Ultimate Collection
+					Disc 002 - 11 - This Is Love This Is Life {FLAC}.flac
+		Single CD Album, Single Artist: 
+			ArtistName\Year - AlbumName\TrackNumber - TrackName {EXTENSION}.extension
+			Example: Imagine Dragons\2012 - Night Visions\01 - Radioactive {FLAC}.flac
+			Imagine Dragons
+				2012 - Night Visions
+					01 - Radioactive {FLAC}.flac
+	All of these files will be labeled correctly by dbPowerAmp
+		The code for the labeling can be found in the "dbPowerAmp Settings" text document
+			There are also settings that can be modified when ripping CDs in dbPowerAmp in the document
+	Folder Structure:
+		\Music
+			\ArtistName1
+				\Year - AlbumName1
+					TrackNumber - TrackName {EXTENSION}.extension
+					Folder.jpg
+				\Year - AlbumName2
+					DiscNumber - TrackNumber TrackName {EXTENSION}.extension
+					Folder.jpg
+			\ArtistName2
+				\Year - AlbumName1
+					TrackNumber - TrackName {EXTENSION}.extension
+					Folder.jpg
+			\Various Artists
+				\Year - CompilationAlbumName1
+					TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+					Folder.jpg
+				\Year - CompilationAlbumName2
+					DiscNumber - TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+					Folder.jpg
+					
+----------------------------------------------------------------------------------------------
+TV Shows
+	Each TV Show will have a folder with the naming scheme:
+		Example:
+		\ShowName1
+		\ShowName2
+	Each TV Show Season will have a separate folder inside the \ShowName1
+		Season 2 Digits Long
+		Year will be 4 Digits Long
+		Example:
+		\ShowName1
+			\Season 01 (YearAired)
+			\Season 02 (YearAired)
+	Each TV Show with bonus features will have a Season 00 folder
+		There will not be a year on the Season 00 Folder
+		Example:
+		\ShowName1
+			\Season 00
+	The naming convention for a normal TV show episode will be:
+		Seasons will be 2 Digit Long
+		Episodes will be 2 Digits Long
+		Example:
+		ShowName1 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+		ShowName1 - S01E02 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+		ShowName2 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+	The naming convention for bonus features will be:
+		Example:
+		ShowName1 - S00E01 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+		ShowName1 - S00E01 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+	Folder Structure:
+		\TV Shows
+			\ShowName1
+				\Season 01 (YearAired)
+					ShowName1 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+					ShowName1 - S01E02 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+				\Season 02 (YearAired)
+					ShowName1 - S02E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+			\ShowName2
+				\Season 00
+					ShowName2 - S00E01 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+					ShowName2 - S00E01 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+				\Season 01 (YearAired)
+					ShowName2 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+
+----------------------------------------------------------------------------------------------
+Complete Folder Structure:
+	\Ripped Media
+		\Movies
+			\MovieName1 (Year)
+				MovieName1 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName1 (Year) - SOURCETYPE Subtitles.en.srt
+				MovieName1 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+			\MovieName2 (Year)
+				MovieName2 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName2 (Year) - SOURCETYPE Subtitles.fr.srt
+			\MovieName3 (Year)
+				MovieName3 (Year) - SOURCETYPE {EXTENSION}.extension
+				MovieName3 (Year) - SOURCETYPE - Extras - ExtraFeaturesName {EXTENSION}.extension
+		\Music
+			\ArtistName1
+				\Year - AlbumName1
+					TrackNumber - TrackName {EXTENSION}.extension
+					Folder.jpg
+				\Year - AlbumName2
+					DiscNumber - TrackNumber TrackName {EXTENSION}.extension
+					Folder.jpg
+			\ArtistName2
+				\Year - AlbumName1
+					TrackNumber - TrackName {EXTENSION}.extension
+					Folder.jpg
+			\Various Artists
+				\Year - CompilationAlbumName1
+					TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+					Folder.jpg
+				\Year - CompilationAlbumName2
+					DiscNumber - TrackNumber - TrackArtist - TrackName {EXTENSION}.extension
+					Folder.jpg
+		\TV Shows
+			\ShowName1
+				\Season 01 (YearAired)
+					ShowName1 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+					ShowName1 - S01E02 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+				\Season 02 (YearAired)
+					ShowName1 - S02E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+			\ShowName2
+				\Season 00
+					ShowName2 - S00E01 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+					ShowName2 - S00E02 - BonusFeaturesName (YearAired) - SOURCETYPE {EXTENSION}.extension
+				\Season 01 (YearAired)
+					ShowName2 - S01E01 - EpisodeName - SOURCETYPE {EXTENSION}.extension
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

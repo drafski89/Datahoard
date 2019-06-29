@@ -1,0 +1,18 @@
+Handbrake Settings for Processing Bluray Files
+	The purpose of this document is to show the standard settings for Bluray files to Plex.
+	
+	Output container settings: MKV
+	
+	Picture
+		Size should be 1920 x 1080 (same as source)
+	Filters
+		None
+	Video
+		x264 Preset: "Faster"
+		Quality: 18 RF
+	Audio
+		16 bit FLAC
+	Subtitles
+		Import SRT, Select English, Do not check any boxes
+	Chapters
+		None

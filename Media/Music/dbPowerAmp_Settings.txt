@@ -1,0 +1,33 @@
+dbPowerAmp Settings
+
+Set up a new profie (copy from default)
+Rip to: Flac
+Path: E:\Ripped Music\
+Naming: [IFCOMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][][IF!COMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][]
+
+DSP
+Add DSP/Action
+	ReplayGain
+		Write as "Track and Album Gain"
+		
+Options
+	Ripping Method
+		Secure (Recover Errors)
+	AccurateRip
+		Check all boxes
+	Meta Data
+		Meta Data and ID Tag
+			Album Art
+				Write the album art as "AlbumArt.jpg"
+	CD ROM
+		After Rip
+			"Eject CD Only if Secure or Accurate"
+	
+
+Options (Arrow Down)
+	Encoder Priority
+		Normal
+	After Ripping
+		Display ONLY error log (uncheck the "display log")
+		
+	

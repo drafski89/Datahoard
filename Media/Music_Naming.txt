@@ -1,0 +1,123 @@
+NAMING SCHEME FOR MUSIC
+-----------------------
+All of these files will be saved to a music directory known as "Ripped Music"
+
+******These are compilations******
+Multiple CD Album, Various Artists: Various Artists\Year - AlbumName\DiscNumber - TrackNumber - ArtistName - TrackName {EXTENSION}
+Example: Various Artists\2014 - Now That's What I Call Summer\Disc 002 - 07 - LMFAO - Sexy And I Know It {FLAC}.flac
+....Various Artists
+........2014 - Now That's What I Call Summer
+............Disc 002 - 07 - LMFAO - Sexy and I Know It {FLAC}.flac
+
+Single CD Album, Various Artists: Various Artists\Year - AlbumName\TrackNumber - ArtistName - TrackName {EXTENSION}
+Example: Various Artists\2015 - Now That's What I Call Music 56\11 - Rachel Platton - Fight Song {FLAC}.flac
+....Various Artists
+........2015 - Now That's What I Call Music 56
+............11 - Rachel Platton - Fight Song {FLAC}.flac
+
+******These are not compilations******
+Multiple CD Album, Single Artist: ArtistName\Year - AlbumName\DiscNumber - TrackNumber - TrackName {EXTENSION}
+Example: Bon Jovi\2010 - Bon Jovi Greatest Hits Ultimate Collection\Disc 002 - 11 - This Is Love This Is Life {FLAC}.flac
+....Bon Jovi
+........2010 - Bon Jovi Greatest Hits Ultimate Collection
+............Disc 002 - 11 - This Is Love This Is Life {FLAC}.flac
+
+Single CD Album, Single Artist: ArtistName\Year - AlbumName\TrackNumber - TrackName {EXTENSION}
+Example: Imagine Dragons\2012 - Night Visions\01 - Radioactive {FLAC}.flac
+....Imagine Dragons
+........2012 - Night Visions
+............01 - Radioactive {FLAC}.flac
+
+
+******Some other things******
+#### NOTE: GOT RID OF THIS NAMING SCHEME
+#### Artists Named As "The Beatles" changed to "Beatles, The" 
+#### [IFEQUALS]artist,The [DEL]1,4,[artist][],[TRIM][DEL]1,4,[artist][], The[][]
+#### 	NOTE TO SELF THIS HAS REPLACED THE STRING: album artist,[album artist]  between [IFVALUE] and ,Various
+#### 	BEFORE:[IFVALUE]album artist,[album artist],Various Artists[]
+#### 	AFTER:[IFVALUE][IFEQUALS]album artist,The [DEL]1,4,[album artist][],[TRIM][DEL]1,4,[artist][], The[][],Various Artists[]
+#### 		I also had to change the "artist" to "album artist"
+
+Disc Numbers at 3 Digits (001, 002, etc.) 
+[SETLEN]3,48,,Disc [disc][]
+
+Track Numbers at 2 Digits (01, 02, etc.)
+[SETLEN]2,48,,[track][]
+
+{EXTENSION}
+{[UPPER][extension][]}
+
+
+
+HERE IS THE CURRENT WRITTEN NAMING SCHEME FOR WHAT I WANT TO DO
+---------------------------------------------------------------
+[IFCOMP]
+	[IFMULTI]
+		[IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}
+	[]
+	[IF!MULTI]
+		[IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}
+	[]
+[]
+
+[IF!COMP]
+	[IFMULTI]
+		[IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}
+	[]
+	[IF!MULTI]
+		[IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}
+	[]
+[]
+
+AND THE COLLAPSED VERSION IS HERE
+---------------------------------
+[IFCOMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [artist] - [title] {[UPPER][extension][]}[][][IF!COMP][IFMULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\Disc [SETLEN]3,48,,[disc][] - [SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][IF!MULTI][IFVALUE]album artist,[album artist],Various Artists[]\[year] - [album]\[SETLEN]2,48,,[track][] - [title] {[UPPER][extension][]}[][]
+
+
+===================================================================================
+***********************************************************************************
+===================================================================================
+
+HERE'S THE LIST OF NAMING COMMANDS
+---------------------------------
+    [artist] - use for the artist name
+    [album artist] - use for the album artist, NOT the same as artist necessarily
+    [album] - use for the album title
+    [title] - use for the track title
+    [track] - use for the track number
+    [disc] - use for the disc number
+    [disc_total] - use for the total number of discs
+    [composer] - use for the composer of the CD
+    [conductor] - use for the conductor of the CD, normally used for classical music CDs
+    [genre] - use for the genre of the CD
+    [year] - use for the year of recording
+    [track_total] - use for the total number of tracks
+    [tag]<element>[] - use if you want to insert a non-standard track into the filename. The ending [] is used to tell dMC that the end of the tag element has been reached, in case there are spaces
+    [length] - use for the track length in milliseconds
+    [length_mmss] - use for the track length in minutes and seconds (mm.ss)
+    [length_hhmmss] - use for the track length in hours, minutes, and seconds (hh.mm.ss)
+    [encoder] - use for the name of the encoder (LAME, Nero, etc.)
+    [encoder+] - use for more detailed encoder information
+    [extension] - audio format extension (mp3, flac, etc.)
+    [cddb_id] - use for the CDDB disc ID
+    [date] - current date
+    [time] - current time
+    [day_of_week] - current day of the week
+    [now_year] - current year
+	[*][unique] - adds a unique value 
+
+Basics: the programmable elements are always within bracks "[IFCOMP]", "[IFMULTI]", etc., a "string" element, and ending braces "[]" that ends the naming string. The naming string can be a list of the above simple elements or nested (multiple levels) of programmable strings. Examples will be listed below.
+    [IFCOMP]string[] - Used if the CD is a compilation
+    [IF!COMP]string[] - Used if the CD is NOT a compilation
+    [IFMULTI]string[] - Used if the CD is part of a multi-disc set
+    [IF!MULTI]string[] - Used if the CD is NOT part of a mutli-disc set
+    [UPPER]string[] - changes the "string" to all uppercase
+    [LOWER]string[] - changes the "string" to all lowercase
+    [RIGHT]count,string[] - uses the last "count" number of characters from the end of the string
+    [GRAB]from,to,string[] - grabs the portion of the string starting at "from" and going to "to"
+    [TRIM]string[] - trims spaces from the beginning or the end of the string
+    [DEL]from,to,string[] - similar to grab, but it removes the portion of the string specified, starting at "from" and going to "to"
+    [SETLEN]count,pre,post,string[] - "count" specifies the length of the string that is desired. Pre and post are character ASCII codes. If the string is longer than count, the string is shortened and characters are removed from the end. If the string is shorter than count and pre is present, the string is extended by inserting the character to the front of the string. If the string is shorter than count and post is present, the string is extended by inserting the character to the end of the string
+    [IFEQUALS]tag,equals,string[] - tests the given tag value against "equals". If they are equal, the string is included in the naming scheme
+    [IF!EQUALS]tag,equals,string[] - tests the given tag value against "equals". If they are NOT equal, the string is included in the naming scheme
+    [IFVALUE]tag,strifvalue,strnovalue[] - If the given tag name has a value, then "strifvalue" is used in the naming scheme, otherwise, if the given tag has no value, then "strnovalue" is used in the naming scheme

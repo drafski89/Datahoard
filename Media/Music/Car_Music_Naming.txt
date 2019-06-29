@@ -1,0 +1,2 @@
+Every multi-disc album should be renamed to the following format:
+ALBUMNAME_D1
