@@ -1,0 +1,21 @@
+*ReneeData/Movies*
+*Archived*
+*Documents/Education/Kettering\ University/*
+*Games/GOG*
+*Games/Origin*
+*Games/ROMs*
+*Games/Steam*
+*Media/Audio*
+*Media/Books_Old*
+*Media/Fitness*
+*Media/Instagram*
+*Media/_InWorkRips*
+*Media/iTunes*
+*Media/Movies*
+*Media/Other*
+*Media/Photos_and_Home_Movies/_To_Organize*
+*Media/Plex*
+*Media/TV_Shows*
+*Media/YouTube*
+*Software*
+*_Transmission*
